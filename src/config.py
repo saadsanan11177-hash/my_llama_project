@@ -1,0 +1,18 @@
+# RULES FOR CONFIG FILE:
+# 1. If you want something from env file, put it there, and just call the os.getenv, we will load it for you.
+# 2. Do not put any imports here. None but 'os'.
+# 3. Only simple definitions. 
+# 4. Always under $folder_of_your_project/src/config.py.
+
+
+import os
+
+NAME = "my_llama_project"
+
+HOSTS = ["1.2.3.4"]
+HOSTS_USER = "ubuntu"
+HOSTS_PORT = 22
+
+NUMBER_OF_PROCESSES_PER_NODE = 2
+
+GITHUB_REPO_URL = "git@github.com:saadsanan11177-hash/my_llama_project.git"
